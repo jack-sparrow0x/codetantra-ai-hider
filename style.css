@@ -5,6 +5,8 @@
   --text-muted: #94a3b8;
   --accent: #38bdf8;
   --accent-hover: #0ea5e9;
+  --firefox-accent: #ff7139;
+  --firefox-hover: #ff5511;
   --border: #334155;
 }
 
@@ -99,8 +101,16 @@ h1 {
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 0.5rem;
+  align-items: stretch;
+  gap: 0.75rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  width: 100%;
 }
 
 .steps-grid {
@@ -147,20 +157,47 @@ code {
 }
 
 .btn {
-  display: inline-block;
-  background: var(--accent);
-  color: #0f172a;
-  padding: 0.6rem 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 230px;
+  gap: 0.6rem;
+  padding: 0.75rem 1.2rem;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
-  transition: background 0.2s;
-  margin-top: 0.5rem;
+  text-align: center;
+  transition: background 0.2s, transform 0.1s;
 }
 
-.btn:hover {
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.btn-chrome {
+  background: var(--accent);
+  color: #0f172a;
+}
+
+.btn-chrome:hover {
   background: var(--accent-hover);
+}
+
+.btn-firefox {
+  background: var(--firefox-accent);
+  color: #fff;
+}
+
+.btn-firefox:hover {
+  background: var(--firefox-hover);
 }
 
 footer {
