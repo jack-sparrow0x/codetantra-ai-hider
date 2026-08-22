@@ -200,6 +200,16 @@ code {
   background: var(--firefox-hover);
 }
 
+.btn-github {
+  background: black;
+  color: #0FBF3E;
+}
+
+.btn-github:hover {
+  background: #0FBF3E;
+  color: black;
+}
+
 footer {
   text-align: center;
   padding: 1.5rem;
