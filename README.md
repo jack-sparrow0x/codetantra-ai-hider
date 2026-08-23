@@ -1,5 +1,5 @@
 # CodeTantra SensAI Hider
-
+### for better experience, instead of this extension use [this](https://github.com/ShivamJaiswal299/Code-Tantrum-AI-blocker) new and better extension.
 A simple browser extension for **CodeTantra** that lets you toggle the visibility of the **SensAI** interface.
 
 ## ✨ Features
